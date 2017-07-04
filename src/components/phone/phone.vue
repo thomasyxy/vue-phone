@@ -46,8 +46,9 @@ export default {
       let date = new Date()
       this.hour = date.getHours()
       this.minute = date.getMinutes()
+      this.second = date.getSeconds()
       setInterval(() => {
-        this.second++
+        this.second = this.second + 1
         if (this.second >= 59) {
           this.minute ++
           if (this.minute >= 59) {
