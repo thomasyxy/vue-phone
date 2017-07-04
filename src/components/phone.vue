@@ -1,12 +1,15 @@
 <template>
   <div class="vue-phone">
-    {{msg}}
+    <img src="./assets/status-bar.png" class="status-bar"/>
+    <div className="phone-content">
+      {{$children}}
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'vue-phone',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
