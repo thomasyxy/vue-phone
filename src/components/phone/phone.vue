@@ -1,7 +1,7 @@
 <template>
   <div class="vue-phone" :style="`width: ${width}px`">
     <div class="vue-phone-bar">
-      <span class="vue-phone-time">{{hour}}:{{minute}}</span>
+      <span class="vue-phone-time">{{time}}</span>
     </div>
     <div class="vue-phone-content" :style="`height: ${height}px`">
       <slot></slot>
@@ -13,6 +13,7 @@
 <script>
 export default {
   name: 'vue-phone',
+
   props: {
     width: {
       type: [String, Number],
@@ -23,11 +24,42 @@ export default {
       default: 667
     }
   },
+
   data () {
     return {
       hour: 0,
-      minute: 0
+      minute: 0,
+      second: 0
     }
+  },
+
+  computed: {
+    time: function () {
+      let h = (this.hour + '').length === 1 ? '0' + this.hour : this.hour
+      let m = (this.minute + '').length === 1 ? '0' + this.minute : this.minute
+      return `${h}:${m}`
+    }
+  },
+
+  methods: {
+    setTime () {
+      let date = new Date()
+      this.hour = date.getHours()
+      this.minute = date.getMinutes()
+      setInterval(() => {
+        this.second++
+        if (this.second >= 59) {
+          this.minute ++
+          if (this.minute >= 59) {
+            this.hour ++
+          }
+        }
+      }, 1000)
+    }
+  },
+
+  mounted: function () {
+    this.setTime()
   }
 }
 </script>
