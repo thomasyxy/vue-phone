@@ -1,5 +1,6 @@
 <template>
   <div class="vue-phone">
+    {{msg}}
   </div>
 </template>
 
