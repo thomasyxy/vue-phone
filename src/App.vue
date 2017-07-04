@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <Phone></Phone>
+    <Phone>
+      <div class="demo-page">
+        hello world
+      </div>
+    </Phone>
   </div>
 </template>
 
