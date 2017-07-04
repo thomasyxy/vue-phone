@@ -1,6 +1,6 @@
 <template>
   <div class="vue-phone">
-    <img src="./assets/status-bar.png" class="status-bar"/>
+    <img src="../assets/status-bar.png" class="status-bar"/>
     <div className="phone-content">
       {{$children}}
     </div>
