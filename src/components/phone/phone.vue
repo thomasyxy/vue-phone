@@ -1,6 +1,8 @@
 <template>
   <div class="vue-phone" :style="`width: ${width}px`">
-    <img src="../assets/status-bar.png" class="vue-phone-bar"/>
+    <div class="vue-phone-bar">
+      <span class="vue-phone-time">{{hour}}:{{minute}}</span>
+    </div>
     <div class="vue-phone-content" :style="`height: ${height}px`">
       <slot></slot>
     </div>
@@ -23,7 +25,8 @@ export default {
   },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      hour: 0,
+      minute: 0
     }
   }
 }
@@ -53,6 +56,11 @@ export default {
   }
   .@{phone}-bar {
     width: 100%;
+    height: 25px;
+    background: url(../../assets/status-bar.png) no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    line-height: 29px;
   }
   .@{phone}-content {
     background: #fff;
