@@ -96,6 +96,7 @@ export default {
     background-size: 100% 100%;
     color: #fff;
     line-height: 29px;
+    text-align: center;
   }
   .@{phone}-content {
     background: #fff;
