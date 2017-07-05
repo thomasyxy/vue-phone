@@ -51,8 +51,10 @@ export default {
         this.second = this.second + 1
         if (this.second >= 59) {
           this.minute ++
+          this.second = 0
           if (this.minute >= 59) {
             this.hour ++
+            this.minute = 0
           }
         }
       }, 1000)
