@@ -13,7 +13,7 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
-  "main": "src/components/phone/index.js",
+  "main": "index.js",
   "dependencies": {
     "vue": "^2.3.3"
   },
