@@ -1,9 +1,8 @@
 {
   "name": "vue-phone",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A Vue.js project",
   "author": "yinxueyuan <838476901@qq.com>",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
@@ -13,7 +12,9 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
-  "main": "index.js",
+  "private": false,
+  "license": "MIT",
+  "main": "lib/phone.vue",
   "dependencies": {
     "vue": "^2.3.3"
   },

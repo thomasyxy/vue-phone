@@ -92,7 +92,7 @@ export default {
   .@{phone}-bar {
     width: 100%;
     height: 25px;
-    background: url(../../assets/status-bar.png) no-repeat;
+    background: url(./assets/status-bar.png) no-repeat;
     background-size: 100% 100%;
     color: #fff;
     line-height: 29px;

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Phone from './components/phone'
+import Phone from '../lib/phone.vue'
 
 export default {
   name: 'app',
