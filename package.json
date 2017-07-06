@@ -13,6 +13,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "private": false,
+  "main": "src/index.js",
   "license": "MIT",
   "main": "lib/phone.vue",
   "dependencies": {
