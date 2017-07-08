@@ -1,6 +1,6 @@
 {
   "name": "vue-phone",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "vue phone container",
   "author": "yinxueyuan <838476901@qq.com>",
   "scripts": {
@@ -13,7 +13,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "private": false,
-  "main": "src/index.js",
+  "main": "lib/phone.vue",
   "license": "MIT",
   "main": "lib/phone.vue",
   "dependencies": {
