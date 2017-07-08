@@ -72,6 +72,18 @@ export default {
     <td>true</td>
     <td>device the browser environment，hide container in the mobile terminal</td>
   </tr>
+  <tr align="center">
+    <td><code>signal</code></td>
+    <td>string,number</td>
+    <td>3</td>
+    <td>signal strength</td>
+  </tr>
+  <tr align="center">
+    <td><code>battery</code></td>
+    <td>string,number</td>
+    <td>100</td>
+    <td>The battery remaining</td>
+  </tr>
  </tbody>
 </table>
 ```
