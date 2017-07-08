@@ -82,6 +82,8 @@ export default {
   height: 700px;
   padding: 105px 25px;
   box-sizing: content-box;
+  overflow: scroll;
+  padding: 10px 20px;
   &:before {
     content: '';
     width: 60px;
