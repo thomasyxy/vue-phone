@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Phone :device="true" @home="clickHome">
+    <Phone @home="clickHome">
       <div class="demo-page">
         hello world
       </div>

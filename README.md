@@ -66,6 +66,12 @@ export default {
     <td>667</td>
     <td>container's height</td>
   </tr>
+  <tr align="center">
+    <td><code>device</code></td>
+    <td>boolean</td>
+    <td>true</td>
+    <td>device the browser environment，hide container in the mobile terminal</td>
+  </tr>
  </tbody>
 </table>
 ```
