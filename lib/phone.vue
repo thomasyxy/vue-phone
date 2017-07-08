@@ -6,7 +6,7 @@
     <div class="vue-phone-content" :style="`height: ${height}px`">
       <slot></slot>
     </div>
-    <div class="vue-phone-btn"></div>
+    <div class="vue-phone-btn" @click="handleClickHome"></div>
   </div>
 </template>
 
@@ -58,6 +58,9 @@ export default {
           }
         }
       }, 1000)
+    },
+    handleClickHome () {
+      this.$emit('home')
     }
   },
 

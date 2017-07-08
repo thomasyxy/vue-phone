@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Phone>
+    <Phone @home="clickHome">
       <div class="demo-page">
         hello world
       </div>
@@ -15,6 +15,11 @@ export default {
   name: 'app',
   components: {
     Phone
+  },
+  methods: {
+    clickHome () {
+      console.log('home')
+    }
   }
 }
 </script>
