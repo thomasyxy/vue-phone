@@ -1,16 +1,22 @@
 <template>
-  <div class="vue-phone" :style="`width: ${width}px`">
-    <div class="vue-phone-bar">
-      <span class="vue-phone-time">{{time}}</span>
+  <div class="vue-device">
+    <div v-if="isDesktop" class="vue-phone" :style="`width: ${width}px`">
+      <div class="vue-phone-bar">
+        <span class="vue-phone-time">{{time}}</span>
+      </div>
+      <div class="vue-phone-content" :style="`height: ${height}px`">
+        <slot></slot>
+      </div>
+      <div class="vue-phone-btn" @click="handleClickHome"></div>
     </div>
-    <div class="vue-phone-content" :style="`height: ${height}px`">
+    <div v-if="isMobile" class="vue-phone-native">
       <slot></slot>
     </div>
-    <div class="vue-phone-btn" @click="handleClickHome"></div>
   </div>
 </template>
 
 <script>
+import UA from 'ua-device'
 export default {
   name: 'vue-phone',
 
@@ -22,6 +28,10 @@ export default {
     height: {
       type: [String, Number],
       default: 667
+    },
+    device: {
+      type: [Boolean],
+      default: true
     }
   },
 
@@ -29,7 +39,8 @@ export default {
     return {
       hour: 0,
       minute: 0,
-      second: 0
+      second: 0,
+      equipment: 'desktop'
     }
   },
 
@@ -38,6 +49,12 @@ export default {
       let h = (this.hour + '').length === 1 ? '0' + this.hour : this.hour
       let m = (this.minute + '').length === 1 ? '0' + this.minute : this.minute
       return `${h}:${m}`
+    },
+    isMobile: function () {
+      return this.equipment === 'mobile'
+    },
+    isDesktop: function () {
+      return this.equipment === 'desktop'
     }
   },
 
@@ -61,10 +78,19 @@ export default {
     },
     handleClickHome () {
       this.$emit('home')
+    },
+    browserRedirect () {
+      let sUserAgent = navigator.userAgent.toLowerCase()
+      let output = new UA(sUserAgent)
+      console.log(output)
+      return output.device.type
     }
   },
 
   mounted: function () {
+    if (this.device) {
+      this.equipment = this.browserRedirect()
+    }
     this.setTime()
   }
 }
@@ -104,7 +130,6 @@ export default {
   .@{phone}-content {
     background: #fff;
     overflow: scroll;
-    padding: 10px 20px;
   }
   .@{phone}-btn {
     content: '';
