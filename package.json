@@ -1,7 +1,7 @@
 {
   "name": "vue-phone",
   "version": "1.0.5",
-  "description": "A Vue.js project",
+  "description": "vue phone container",
   "author": "yinxueyuan <838476901@qq.com>",
   "scripts": {
     "dev": "node build/dev-server.js",
