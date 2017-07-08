@@ -79,7 +79,6 @@ export default {
   background: #000;
   border-radius: 55px;
   box-shadow: 0 0 0 2px #333;
-  height: 700px;
   padding: 105px 25px;
   box-sizing: content-box;
   &:before {

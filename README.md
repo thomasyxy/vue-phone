@@ -5,6 +5,8 @@
 
 > vue phone container
 
+![vue-phone(demo picture)](https://cdn.leoao.com/yinxy/phone.jpeg)
+
 [vue-phone](https://github.com/thomasyxy/vue-phone)
 
 ## Usage
