@@ -1,8 +1,12 @@
 {
   "name": "vue-phone",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "vue phone container",
-  "author": "yinxueyuan <838476901@qq.com>",
+  "author": {
+    "name": "thomasyxy",
+    "email": "838476901@qq.com",
+    "url": "https://github.com/thomasyxy"
+  },
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
@@ -15,6 +19,12 @@
   "private": false,
   "main": "lib/phone.vue",
   "license": "MIT",
+  "bugs": "https://github.com/thomasyxy/vue-phone/issues/2",
+  "homepage": "https://github.com/thomasyxy/vue-phone",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomasyxy/vue-phone"
+  },
   "main": "lib/phone.vue",
   "dependencies": {
     "vue": "^2.3.3"
@@ -87,6 +97,14 @@
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
   },
+  "keywords": [
+    "vue",
+    "vue2",
+    "phone",
+    "cotainer",
+    "mobile",
+    "vue-phone"
+  ],
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"

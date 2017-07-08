@@ -1,30 +1,97 @@
 # vue-phone
 
-> A Vue.js project
+[![npm](https://img.shields.io/npm/v/vue-phone.svg)](https://www.npmjs.com/package/vue-phone)
+[![npm](https://img.shields.io/npm/dw/vue-phone.svg)](https://www.npmjs.com/package/vue-phone)
 
-## Build Setup
+> vue phone container
+
+[vue-phone](https://github.com/thomasyxy/vue-phone)
+
+## Usage
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+# install
+npm install --save vue-phone
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+```html
+<template>
+  <Phone :width="200" :height="600" @home="clickHome">
+    <div class="demo-page">
+      hello world
+    </div>
+  </Phone>
+</template>
+<script>
+import Phone from 'vue-phone'
+
+export default {
+  name: 'app',
+  components: {
+    Phone
+  },
+  methods: {
+    clickHome () {
+      console.log('home')
+    }
+  }
+}
+</script>
+```
+
+
+```html
+// Initialize parameter
+<table width="100%">
+<thead>
+  <tr>
+    <th width="20%">Option</th>
+    <th width="15%">Type</th>
+    <th width="15%">Default</th>
+    <th width="50%">Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align="center">
+    <td><code>width</code></td>
+    <td>string,number</td>
+    <td>375</td>
+    <td>container's width</td>
+  </tr>
+  <tr align="center">
+    <td><code>height</code></td>
+    <td>string,number</td>
+    <td>667</td>
+    <td>container's height</td>
+  </tr>
+ </tbody>
+</table>
+```
+
+```html
+// API / Parents-Event
+<table width="100%" align="center">
+<thead>
+  <tr>
+    <th align="center" width="12.5%">Method</th>
+    <th align="center" width="12.5%">Parameters</th>
+    <th align="center" width="35%">Description</th>
+    <th align="center" width="40%">Example</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align="center">
+    <td><code>home</code></td>
+    <td>-</td>
+    <td>click home button</td>
+    <td><code>phone.$on('home', function(){console.log('back home')})</code></td>
+  </tr>
+ </tbody>
+</table>
+```
+
+### Have better ideas？
+Please tell me your options: https://github.com/thomasyxy/vue-phone/issues/1
+
+### submit BUG
+You can be submitted here, and i will be dealt with as soon as possible: https://github.com/thomasyxy/vue-phone/issues/2
