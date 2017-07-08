@@ -137,7 +137,7 @@ export default {
   background: #000;
   border-radius: 55px;
   box-shadow: 0 0 0 2px #333;
-  padding: 105px 25px;
+  padding: 75px 15px;
   box-sizing: content-box;
   &:before {
     content: '';
@@ -148,7 +148,7 @@ export default {
     height: 10px;
     border-radius: 10px;
     background: #333;
-    top: 50px;
+    top: 32px;
   }
   .@{phone}-row {
     width: 100%;
@@ -253,12 +253,12 @@ export default {
   }
   .@{phone}-btn {
     content: '';
-    width: 60px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     left: 50%;
-    margin-left: -30px;
-    height: 60px;
-    bottom: 20px;
+    margin-left: -25px;
+    bottom: 13px;
     border-radius: 100%;
     box-sizing: border-box;
     border: 5px solid #333;
