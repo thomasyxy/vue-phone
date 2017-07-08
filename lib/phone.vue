@@ -81,6 +81,7 @@ export default {
   box-shadow: 0 0 0 2px #333;
   height: 700px;
   padding: 105px 25px;
+  box-sizing: padding-box;
   &:before {
     content: '';
     width: 60px;
