@@ -17,7 +17,7 @@ export default {
     return {
       signal: 0
     }
-  }
+  },
   components: {
     Phone
   },
@@ -28,7 +28,7 @@ export default {
   },
   mounted () {
     setInterval(() => {
-      if (this.signal >= 5){
+      if (this.signal >= 5) {
         this.signal = 1
       } else {
         this.signal++
