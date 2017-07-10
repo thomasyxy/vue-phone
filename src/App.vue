@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Phone @home="clickHome" :signal="signal" :battery="battery">
+    <Phone @home="clickHome" :signal="signal" :battery="battery" background="http://ww1.sinaimg.cn/mw690/6ec8ccd0gw1e67grbw0cnj20hs0vk79o.jpg">
       <div class="demo-page">
         hello world
       </div>

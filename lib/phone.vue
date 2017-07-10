@@ -25,7 +25,7 @@
           </div>
         </div>
       </div>
-      <div class="vue-phone-content" :style="`height: ${height}px`">
+      <div class="vue-phone-content" :style="{height: height + 'px', backgroundImage: 'url(' + background + ')'}">
         <slot></slot>
       </div>
       <div class="vue-phone-btn" @click="handleClickHome"></div>
@@ -62,6 +62,10 @@ export default {
     },
     battery: {
       type: [String, Number],
+      default: 100
+    },
+    background: {
+      type: [String],
       default: 100
     }
   },
