@@ -84,6 +84,12 @@ export default {
     <td>100</td>
     <td>The battery remaining</td>
   </tr>
+  <tr align="center">
+    <td><code>background</code></td>
+    <td>string</td>
+    <td>-</td>
+    <td>phone's background</td>
+  </tr>
  </tbody>
 </table>
 ```
