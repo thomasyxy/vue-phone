@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Phone @home="clickHome">
+    <Phone @home="clickHome" :signal="signal">
       <div class="demo-page">
         hello world
       </div>
@@ -13,6 +13,11 @@ import Phone from '../lib/phone.vue'
 
 export default {
   name: 'app',
+  data () {
+    return {
+      signal: 0
+    }
+  }
   components: {
     Phone
   },
@@ -20,6 +25,15 @@ export default {
     clickHome () {
       console.log('home')
     }
+  },
+  mounted () {
+    setInterval(() => {
+      if (this.signal >= 5){
+        this.signal = 1
+      } else {
+        this.signal++
+      }
+    }, 1000)
   }
 }
 </script>
