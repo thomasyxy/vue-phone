@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Phone @home="clickHome" :signal="signal">
+    <Phone @home="clickHome" :signal="signal" :battery="battery">
       <div class="demo-page">
         hello world
       </div>
@@ -15,7 +15,8 @@ export default {
   name: 'app',
   data () {
     return {
-      signal: 0
+      signal: 0,
+      battery: 100
     }
   },
   components: {
@@ -32,6 +33,11 @@ export default {
         this.signal = 1
       } else {
         this.signal++
+      }
+      if (this.battery > 0) {
+        this.battery--
+      } else {
+        this.battery = 100
       }
     }, 1000)
   }
