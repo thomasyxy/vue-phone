@@ -1,6 +1,6 @@
 {
   "name": "vue-phone",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "vue phone container",
   "author": {
     "name": "thomasyxy",
@@ -26,7 +26,7 @@
     "url": "https://github.com/thomasyxy/vue-phone"
   },
   "dependencies": {
-    "devicejs": "0.0.3",
+    "ua-device": "^0.1.9",
     "vue": "^2.3.3"
   },
   "devDependencies": {
