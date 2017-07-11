@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/vue-phone.svg)](https://www.npmjs.com/package/vue-phone)
 [![npm](https://img.shields.io/npm/dw/vue-phone.svg)](https://www.npmjs.com/package/vue-phone)
 
-> vue phone container
+> vue phone container, analog mobile demonstration
 
 [vue-phone](https://github.com/thomasyxy/vue-phone)
 
