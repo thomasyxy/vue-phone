@@ -87,7 +87,7 @@ export default {
   <tr align="center">
     <td><code>background</code></td>
     <td>string</td>
-    <td>-</td>
+    <td>''</td>
     <td>phone's background</td>
   </tr>
  </tbody>
